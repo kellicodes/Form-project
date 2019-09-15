@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Nunito', sans-serif;
+    
+  }
+.main-header {
+    background: #080623;
+    color: white;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.intro {
+    width: 90%;
+    text-align: center;
+    padding: 10px 25px;
+    border-bottom: solid 3px #080623;
+    margin: 5px auto -6px;
+    
+}
+
+.border {
+    border-bottom: solid 1px #080623;
+    width: 90%;
+    margin: 0 auto 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="address"],
+input[type="email"],
+input[type="city"],
+input[type="state"],
+input[type="zip"],
+textarea,
+select {
+  background: #080623;
+  border: none;
+  height: auto;
+  font: 400 15px 'Nunito';
+  outline: 0;
+  padding: 14px;
+  margin: 15px 0; 
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  border-radius: 3px;
+}
+input[type="checkbox"]{
+    margin: 8px;
+}
+
+input[type="zip"]{
+    width: 50%;
+}
+
+select {
+    height: 50px;
+}
+
+::placeholder {
+    text-align: right;
+    font-weight: 100;
+    font-style: italic;
+    font-size: .8em;
+  }
+label, h4 {
+    font-weight: 100;
+}
+fieldset {
+    border: none;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+button {
+    width: 93%;
+    height: 50px;
+    margin: 0 15px 10px;
+    background: #19b6bd;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+    color: grey;
+}
+
+@media (min-width: 768px){
+    .main {
+        margin: 0 auto;
+        width: 60%;
+    }
+    label[for="name"],
+    label[for="email"],
+    label[for="phone"],
+    label[for="address"],
+    label[for="city"],
+    label[for="state"],
+    label[for="zip"]
+    {
+        clear: both;
+        float:left;
+        margin-right:15px;
+        padding-top: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"],
+    input[type="address"],
+    input[type="email"],
+    input[type="city"],
+    input[type="state"],
+    input[type="zip"],
+    select {
+      background: #080623;
+      border: none;
+      height: auto;
+      float: right;
+      font: 400 15px 'Nunito';
+      outline: 0;
+      padding: 14px;
+      margin: 15px 0 15px 0; 
+      width: 80%;
+      background-color: #e8eeef;
+      color: #8a97a0;
+      border-radius: 3px;
+    }
+    input[type="zip"]{
+        width: 40%;
+        margin-right: 223px;
+    }
+
+    .border {
+        width: 100%;
+    
+    }
+    .intro {
+        width: 100%;
+    
+        
+    }
+}

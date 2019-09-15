@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,200,100' rel='stylesheet' type='text/css'>
+        <title>Forms</title>
+    </head>
+    <body>
+        
+        <nav class="main-header">
+            <h1>THE CODE REVIEW</h1>
+        </nav>
+        <div class="main">
+        <div class="intro">
+            <h2>Signup for our newsletter</h2>
+            <h4>Get the latest news on how your code is doing right in your inbox</h4>
+        </div>
+        <div class="border"></div>
+        <div class="form">
+        <form action="index.html" method="post">
+            <fieldset>
+                <legend>Contact Information</legend>
+               
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user_name" placeholder="Required">
+                <label for="email">Email</label>
+                <input type="email" id="mail" name="user_email" placeholder="Required">
+                <label for="phone">Phone Number</label>
+                <input type="phone" id="phone" name="user_phone">
+                <label for="address">Street Address</label>
+                <input type="address" id="address" name="user_address">
+                <label for="city">City</label>
+                <input type="city" id="city" name="user_city">
+                <label for="state">State</label>
+                <select id="state" name="user_state">
+                    <optgroup>
+                    <option value="" disabled selected>Choose State</option>
+                    <option value="alabama">Alabama</option>
+                    <option value="arizona">Arizona</option>
+                    <option value="arkansas">Arkansas</option>
+                     </optgroup>
+                </select>
+                <label for="zip">Zip Code</label><br>
+                <input type="zip" id="zip" name="user_zip">
+                 
+            </fieldset>
+            <div class="border"></div>
+            <fieldset>
+                <label for="newsletter"></label>
+                <legend>Newsletter</legend>
+                <label>Select the newsletters you would like to recieve</label><br>
+                <input type="checkbox" id="html" value="html" name="news"><label for="html">HTML News</label><br>
+                <input type="checkbox" id="css" value="css" name="news"><label for="css">CSS News</label><br>
+                <input type="checkbox" id="js" value="js" name="news"><label for="js">Javascript News</label><br><br>
+                <label>Newsletter Format</label><br>
+                <input type="radio" id="html-format" value="html_format" name="format"><label for="html-format">HTML</label><br>
+                <input type="radio" id="plain" value="plain" name="format"><label for="plain">Plain text</label><br><br>
+                <label>Other topics you'd like to hear about</label>
+                <textarea id="topics" name="user_topics"></textarea>
+             </fieldset>
+             <button type="submit">Sign Up</button>
+        </form>
+        <P>Copyright The Code Review</P>
+        </div>
+    </div>
+    </body>
+</html>
