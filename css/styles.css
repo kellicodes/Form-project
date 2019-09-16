@@ -57,7 +57,7 @@ input[type="checkbox"]{
 }
 
 input[type="zip"]{
-    width: 50%;
+    width: 40%;
 }
 
 select {
@@ -94,7 +94,9 @@ button {
     font-size: 1em;
     font-weight: bold;
 }
-
+input:focus {
+    background-color: yellow;
+  }
 p {
     text-align: center;
     font-style: italic;
@@ -117,18 +119,13 @@ p {
     {
         clear: both;
         float:left;
-        margin-right:15px;
-        padding-top: 20px;
+        margin-right:10px;
+        padding-top: 25px;
     }
 
     input[type="text"],
     input[type="email"],
     input[type="phone"],
-    input[type="address"],
-    input[type="email"],
-    input[type="city"],
-    input[type="state"],
-    input[type="zip"],
     select {
       background: #080623;
       border: none;
@@ -138,14 +135,15 @@ p {
       outline: 0;
       padding: 14px;
       margin: 15px 0 15px 0; 
-      width: 80%;
+      width: 70%;
       background-color: #e8eeef;
       color: #8a97a0;
       border-radius: 3px;
     }
     input[type="zip"]{
-        width: 40%;
-        margin-right: 223px;
+        max-width: 50%;
+        float: left;
+        margin-left: 50px;
     }
 
     .border {
@@ -154,7 +152,17 @@ p {
     }
     .intro {
         width: 100%;
-    
-        
+    }
+
+}
+@media (min-width: 1024px){
+    input[type="zip"]{
+        max-width: 40%;
+        float: left;
+        margin-left: 108px;
+    }
+    button {
+        width: 95%;
+        margin: 0 15px 10px;
     }
 }
