@@ -3,8 +3,8 @@
   }
   body {
     font-family: 'Nunito', sans-serif;
-    
   }
+  
 .main-header {
     background: #080623;
     color: white;
@@ -128,6 +128,7 @@ p {
     }
 
 }
+
 @media (min-width: 1024px){
 
     label[for="name"],
@@ -143,28 +144,18 @@ p {
         margin-right:10px;
         padding-top: 25px;
     }
-    input[name="user_zip"]{
-        width: 40%;
-        margin-left: 70px;
-        
-    }
-    
-    input[type="email"], 
-    input[name="user_phone"],
+
     input[name="user_name"],
-    input[name="user_address"], 
-    input[name="user_city"], select {
-        background: #080623;
-        border: none;
-        height: auto;
-        font: 400 15px 'Nunito';
-        outline: 0;
-        padding: 14px;
-        margin: 15px 0;
+    input[name="user_phone"],
+    input[name="user_address"],
+    input[name="user_city"],
+    input[type="email"],
+    select {
         width: 75%;
-        background-color: #e8eeef;
-        color: #8a97a0;
-        border-radius: 3px;
+        float: right;
+    }
+    input[name="user_zip"]{
+        width: 75%;
         float: right;
     }
 
