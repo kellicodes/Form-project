@@ -58,6 +58,12 @@ select {
     height: 50px;
 }
 
+.flex-pair {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
 ::placeholder {
     text-align: right;
     font-weight: 100;
@@ -106,19 +112,7 @@ p {
         margin: 0 auto;
         max-width: 60%;
     }
-    label[for="name"],
-    label[for="email"],
-    label[for="phone"],
-    label[for="address"],
-    label[for="city"],
-    label[for="state"],
-    label[for="zip"]
-    {
-        clear: both;
-        float:left;
-        margin-right:10px;
-        padding-top: 25px;
-    }
+    
     .border {
         width: 100%;
     
@@ -131,32 +125,20 @@ p {
 
 @media (min-width: 1024px){
 
-    label[for="name"],
-    label[for="email"],
-    label[for="phone"],
-    label[for="address"],
-    label[for="city"],
-    label[for="state"],
-    label[for="zip"]
-    {
-        clear: both;
-        float:left;
-        margin-right:10px;
-        padding-top: 25px;
-    }
+    .flex-pair {
+        flex-direction: row;
+      }
 
-    input[name="user_name"],
-    input[name="user_phone"],
-    input[name="user_address"],
-    input[name="user_city"],
-    input[type="email"],
-    select {
-        width: 75%;
-        float: right;
-    }
+      input, select {
+        flex-grow: 1;
+        flex-basis: 75%;
+      }
+      label {
+        flex-basis: 25%;
+        margin: auto 0;
+      }
     input[name="user_zip"]{
-        width: 75%;
-        float: right;
+        max-width: 25%;
     }
 
     button {
